@@ -116,6 +116,18 @@ header.hero{
   border-radius: 999px;
   margin-bottom: 22px;
 }
+.eyebrow-row{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.eyebrow-row .eyebrow{ margin-bottom: 0; }
+.eyebrow-dev{
+  color: var(--coral);
+  background: rgba(255,122,101,0.09);
+  border-color: rgba(255,122,101,0.28);
+}
 h1.title{
   font-family:'Space Grotesk', sans-serif;
   font-weight: 700;
@@ -316,6 +328,18 @@ article strong{ color: var(--text); font-weight: 600; }
   color: var(--text);
   border: 1px solid var(--hair);
 }
+.dev-note{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size: 13px;
+  color: var(--coral);
+  background: rgba(255,122,101,0.08);
+  border: 1px solid rgba(255,122,101,0.22);
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
 .privacy-note{
   margin-top: 20px;
   font-size: 12.5px;
@@ -356,14 +380,17 @@ footer{
       <div class="brand-mark"></div>
       <span class="brand-name">SpaceMint</span>
     </div>
-    <a href="#get-app" class="nav-cta">Get the app</a>
+    <a href="#get-app" class="nav-cta">Join the waitlist</a>
   </div>
 </nav>
 
 <div class="wrap">
 
   <header class="hero">
-    <span class="eyebrow">On-device &amp; private</span>
+    <div class="eyebrow-row">
+      <span class="eyebrow">On-device &amp; private</span>
+      <span class="eyebrow eyebrow-dev">In development</span>
+    </div>
     <h1 class="title">Your phone isn't full.<br>It's full of <em>copies</em>.</h1>
     <p class="dek">Burst shots, WhatsApp re-saves, screenshots you screenshotted again — most of what's eating your storage isn't memories, it's duplicates. Here's how to find the difference without losing either.</p>
     <div class="meta-row">
@@ -449,13 +476,13 @@ footer{
     </ul>
 
     <div class="cta-band" id="get-app">
+      <span class="dev-note">● Currently in development — not yet available to download</span>
       <h2>Make room. Keep memories.</h2>
-      <p>Free to scan. See exactly what's reclaimable before you delete a thing.</p>
+      <p>Free to scan, once it's ready. Join the waitlist to get early access and follow build progress.</p>
       <div class="cta-buttons">
-        <a href="#" class="btn btn-primary">Download for iOS →</a>
-        <a href="#" class="btn btn-secondary">Download for Android →</a>
+        <a href="#" class="btn btn-primary">Join the waitlist →</a>
       </div>
-      <p class="privacy-note"><span class="mint-dot">●</span> On-device scanning — your media is never uploaded</p>
+      <p class="privacy-note"><span class="mint-dot">●</span> On-device scanning — your media will never be uploaded</p>
     </div>
 
   </article>
